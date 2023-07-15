@@ -37,6 +37,9 @@ class SawyerMocapBase(mjenv_gym):
         self.reset_mocap_welds()
         self.frame_skip = frame_skip
 
+    def set_render(self, mode):
+        self.render_mode = mode
+
     def get_endeff_pos(self):
         return self.data.body("hand").xpos
 

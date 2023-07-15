@@ -35,6 +35,12 @@ class MetaWorldEnv:
             ValueError: If task.env_name is different from the current task.
 
         """
+    def set_render(self, mode:str) -> None:
+        """Set the render
+            ["human",
+            "rgb_array",
+            "depth_array",].
+        """
 
 
 class Benchmark(abc.ABC):
